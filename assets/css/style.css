@@ -1,0 +1,246 @@
+/*=====Estilos generales=====*/
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #123392;
+    color: white;
+}
+.line {
+    border-top: 6px solid #c49e0d;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+/*=====Estilo de logos y facultad=====*/
+.logoUAS, .logoFacultad{
+    display: flex;
+    align-items: center;
+}
+.logoUAS img, .logoFacultad img{
+    height: 120px;
+    margin-right: 10px;
+}
+.NombreUAS{
+    background-color: #003595;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    height: 60px;
+}
+.NombreUAS h4{
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+.NombreFacultad {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*=====Estilo menu=====*/
+nav {
+    background-color: #c49e0d;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+}
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/*=====Estilo submenu=====*/
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #123392;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    top: 40px;
+    left: 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.submenu li {
+    padding: 10px;
+    text-align: left;
+}
+.submenu li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #123392;
+}
+nav > ul > li:hover > .submenu {
+    display: block;
+}
+
+/*=====Estilo lista del menu=====*/
+.ulmenu {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.limenu {
+    position: relative;
+    display: inline-block;
+}
+
+/*=====Estilo apartado SLIDER=====*/
+
+/*=====Estilo apartado tarjetas=====*/
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-header h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+.section-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+.fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.tarjeta {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+.tarjeta img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.tarjeta h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+}
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.tarjeta button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: white;
+    background: #123392;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tarjeta button:hover {
+    background:#c49e0d;
+}
+
+/*=====Estilo apartado certificaciones=====*/
+.certificaciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+    background-color: #123392;
+    color: white;
+}
+.certificaciones h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+.certificaciones p {
+    font-size: 1rem;
+    color: white;
+    margin-top: 10px;
+}
+/*=====Estilo apartado footer=====*/
+.footer {
+    background-color: #f1ebd5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer .footer-column {
+    flex: 6;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer .footer-column img {
+    height: 60px;
+    margin: 0 auto;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.footer .social-icons a {
+    text-decoration: none;
+    color: #706D58;
+    font-size: 20px;
+}
+
+.footer p,
+.footer a {
+    color: #706D58;
+    font-size: 14px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
