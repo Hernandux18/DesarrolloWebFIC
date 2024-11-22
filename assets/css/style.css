@@ -1,3 +1,12 @@
+/*
+Header {
+Fondo principal (Degradado): #1d71b8 -> #003595
+Nombre Universidad (Degradado): #003595 -> #1d71b8
+Menú color: #b89d2b
+Color: white
+}
+*/
+
 /*=====Estilos generales=====*/
 body {
     font-family: "Roboto Condensed", sans-serif;
@@ -16,11 +25,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #123392;
+    background: linear-gradient(90deg,#1d71b8,#003595);
     color: white;
 }
 .line {
-    border-top: 6px solid #c49e0d;
+    border-top: 6px solid #b89d2b;
     width: 100%;
     max-width: 500px;
     margin-bottom: 10px;
@@ -36,7 +45,7 @@ header {
     margin-right: 10px;
 }
 .NombreUAS{
-    background-color: #003595;
+    background: linear-gradient(-90deg,#1d71b8,#003595);
     padding: 0;
     margin: 0;
     display: flex;
