@@ -8,6 +8,10 @@ Color: white
 */
 
 /*=====Estilos generales=====*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
@@ -127,6 +131,79 @@ nav > ul > li:hover > .submenu {
 }
 
 /*=====Estilo apartado SLIDER=====*/
+
+.contenedor {
+    max-width: 100%;
+    max-height: 350px;
+    box-sizing: border-box;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 350px;;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.slider-content {
+    display: flex;
+    max-height: 350px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider-box .container{
+    display: flex;
+    /* aspect-ratio: 19/6; */
+}
+
+.col-img{
+    padding: 0 12px;
+}
+
+.col-img img{
+    width: 478.22px;
+    height: 269px;
+}
+
+.col-cont {
+    padding: 0 12px;
+}
+
+.col-cont p {
+    display: block;
+    width: 500px;
+    max-width: 40%;
+}
+
+.slider-indicators {
+    display: flex;
+    position: absolute;
+    column-gap: 12px;;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    z-index: 1;
+}
+
+.slider-indicators a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #1d71b8;
+}
+
+.slider-indicators a:hover {
+    background-color: #003595;
+}
+
+/* .active {
+    display: block;
+} */
+
+
 
 /*=====Estilo apartado tarjetas=====*/
 .section-header {
