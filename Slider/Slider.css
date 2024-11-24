@@ -1,0 +1,82 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+#contentItemsCarrusel{
+    height: 200px;
+    overflow: hidden;
+}
+
+
+
+.itemCarrusel{
+    height: 200px;
+    position: relative;
+}
+
+.tarjetaCarrusel{
+    background-color: aqua;
+    height: 100%;
+}
+
+.flechasCarrusel{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjetaCarrusel-1{
+    background-color: aqua;
+}
+
+#tarjetaCarrusel-2{
+    background-color: rgb(56, 85, 110);
+}
+
+#tarjetaCarrusel-3{
+    background-color: rgb(234, 142, 23);
+}
+
+#tarjetaCarrusel-4{
+    background-color: aquamarine;
+}
+
+#tarjetaCarrusel-5{
+    background-color: rgb(223, 223, 123);
+}
+
+#tarjetaCarrusel-6{
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#contePuntos{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: rgb(255, 255, 255);
+}
+
+#contePuntos > a{
+    font-size: 1.5em;
+    font-style: none;
+    color: black;
+}
